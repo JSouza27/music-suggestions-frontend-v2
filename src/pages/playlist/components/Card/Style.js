@@ -26,6 +26,7 @@ export const Title = styled.div`
 `;
 
 export const SubTitle = styled.div`
+  color: #646464;
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.11rem;

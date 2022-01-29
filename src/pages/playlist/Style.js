@@ -14,7 +14,7 @@ export const SearchBar = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  height: 6.24rem;
+  height: 2.81rem;
   width: 100%;
 `;
 
@@ -49,19 +49,29 @@ export const RecentPlayed = styled.div`
   margin: 1.25rem 0 1.25rem 1.06rem;
 
   & > h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     padding: 0;
   }
 `;
 
-export const CarouselContainer = styled.div`
-  display: flex;
-`;
-
 export const PlaylistContent = styled.div`
   height: 100%;
-  padding: 1.06rem;
+  max-height: 20.75rem;
+  padding: 0 1.06rem;
+  overflow-y: scroll;
+
+  & > h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.22rem;
+    margin-bottom: 1.75rem;
+    padding: 0;
+  }
+
+  @media(max-width: 400px) {
+    max-height: 16.75rem;
+  }
 `;
 
 export const PlayerContent = styled.div`

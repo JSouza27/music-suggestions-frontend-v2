@@ -10,8 +10,10 @@ import {
 } from './Style';
 import { BiMenuAltLeft, BiSearch } from 'react-icons/bi';
 import Carousel from './components/Carousel/Index';
+import HorizontalCard from './components/HorizontalCard/Index';
 
 function Playlist() {
+  const data = [1,2,3,4,5,6,7,8];
   return (
     <Wrapper>
       <SearchBar>
@@ -25,9 +27,12 @@ function Playlist() {
       </RecentPlayed>
 
       <PlaylistContent>
-        lista de musicas
+        <h1>Playlist</h1>
+        {
+          data.map((d) => <HorizontalCard />)
+        }
       </PlaylistContent>
-      
+
       <PlayerContent>
         player
       </PlayerContent>
