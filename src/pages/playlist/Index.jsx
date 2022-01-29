@@ -2,13 +2,14 @@ import React from 'react';
 import {
   Wrapper,
   SearchBar,
-  RecommendedContent,
+  RecentPlayed,
   PlayerContent,
   PlaylistContent,
   ButtonSearch,
   ButtonMenu,
 } from './Style';
 import { BiMenuAltLeft, BiSearch } from 'react-icons/bi';
+import CardCarrousel from './components/CardCarrousel/Index';
 
 function Playlist() {
   return (
@@ -17,9 +18,10 @@ function Playlist() {
         <ButtonMenu><BiMenuAltLeft /></ButtonMenu>
         <ButtonSearch><BiSearch /></ButtonSearch>
       </SearchBar>
-      <RecommendedContent>
-        carrousel de recomendados
-      </RecommendedContent>
+      <RecentPlayed>
+        <h1>Recentes</h1>
+        <CardCarrousel />
+      </RecentPlayed>
       <PlaylistContent>
         lista de musicas
       </PlaylistContent>

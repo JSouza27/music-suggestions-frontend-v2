@@ -12,10 +12,9 @@ export const Wrapper = styled.div`
 
 export const SearchBar = styled.div`
   align-items: center;
-  border: 1px solid;
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 6.24rem;
   width: 100%;
 `;
 
@@ -24,12 +23,12 @@ export const ButtonSearch = styled.button`
   background-color: transparent;
   border: none;
   display: flex;
-  font-size: 28px;
+  font-size: 1.75rem;
   justify-content: center;
-  height: 32px;
+  height: 3rem;
   margin-right: 1rem;
   outline: none;
-  width: 32px;
+  width: 3rem;
 `;
 
 export const ButtonMenu = styled.button`
@@ -37,18 +36,23 @@ export const ButtonMenu = styled.button`
   background-color: transparent;
   border: none;
   display: flex;
-  font-size: 32px;
+  font-size: 2rem;
   justify-content: center;
-  height: 48px;
+  height: 3rem;
   margin-left: 1rem;
   outline: none;
-  width: 48px;
+  width: 3rem;
 `;
 
-export const RecommendedContent = styled.div`
-  border: 1px solid red;
-  height: 255px;
+export const RecentPlayed = styled.div`
+  height: 15.93rem;
   margin: 20px 0 20px 17px;
+
+  & > h1 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0;
+  }
 `;
 
 export const PlaylistContent = styled.div`
@@ -61,8 +65,8 @@ export const PlayerContent = styled.div`
   border: 1px solid blue;
   bottom: 0;
   display: block;
-  height: 125px;
-  margin-top: 32px;
+  height: 7.81rem;
+  margin-top: 2rem;
   position: fixed;
   width: 100%;
 `;
