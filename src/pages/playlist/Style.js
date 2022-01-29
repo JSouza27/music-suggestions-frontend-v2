@@ -46,7 +46,7 @@ export const ButtonMenu = styled.button`
 
 export const RecentPlayed = styled.div`
   height: 15.93rem;
-  margin: 20px 0 20px 17px;
+  margin: 1.25rem 0 1.25rem 1.06rem;
 
   & > h1 {
     font-size: 24px;
@@ -55,10 +55,13 @@ export const RecentPlayed = styled.div`
   }
 `;
 
+export const CarouselContainer = styled.div`
+  display: flex;
+`;
+
 export const PlaylistContent = styled.div`
-  border: 1px solid green;
   height: 100%;
-  padding: 17px;
+  padding: 1.06rem;
 `;
 
 export const PlayerContent = styled.div`

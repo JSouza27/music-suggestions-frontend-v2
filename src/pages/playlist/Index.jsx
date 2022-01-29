@@ -9,7 +9,7 @@ import {
   ButtonMenu,
 } from './Style';
 import { BiMenuAltLeft, BiSearch } from 'react-icons/bi';
-import CardCarrousel from './components/CardCarrousel/Index';
+import Carousel from './components/Carousel/Index';
 
 function Playlist() {
   return (
@@ -18,13 +18,16 @@ function Playlist() {
         <ButtonMenu><BiMenuAltLeft /></ButtonMenu>
         <ButtonSearch><BiSearch /></ButtonSearch>
       </SearchBar>
+
       <RecentPlayed>
         <h1>Recentes</h1>
-        <CardCarrousel />
+        <Carousel />
       </RecentPlayed>
+
       <PlaylistContent>
         lista de musicas
       </PlaylistContent>
+      
       <PlayerContent>
         player
       </PlayerContent>
